@@ -1,0 +1,49 @@
+" VIFM Configuration
+" Behavior
+set vicmd=nvim
+set history=20
+set nofollowlinks
+set fastrun
+set sortnumbers
+set undolevels=10
+set novimhelp
+set norunexec
+set slowfs=curlftpfs
+
+
+" Interface
+colorscheme springfield-x16
+set timefmt=%m/%d\ %H:%M
+set wildmenu
+set wildstyle=bar
+set suggestoptions=normal,visual,view,otherpane,keys,marks,registers
+set ignorecase
+set smartcase
+set nohlsearch
+set incsearch
+set scrolloff=4
+set statusline="  %t%= %A %10u:%-7g %15E %20d  "
+
+
+" Bookmarks
+mark h ~/
+mark d ~/dls
+mark m /mnt
+
+
+" Commands
+command! df df -h %m 2> /dev/null
+command! diff vim -d %f %F
+command! zip zip -r %f.zip %f
+command! run !! ./%f
+command! make !!make %a
+command! mkcd :mkdir %a | cd %a
+command! vgrep vim "+grep %a"
+command! reload :write | restart
+
+
+" Another configuration
+source ~/.config/vifm/map.vim
+source ~/.config/vifm/filetype.vim
+
+" vim: filetype=vim

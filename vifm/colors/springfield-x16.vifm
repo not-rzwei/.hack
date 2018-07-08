@@ -1,0 +1,7 @@
+hi clear
+
+hi Win           cterm=none ctermfg=none ctermbg=none
+hi CurrLine      cterm=bold ctermfg=01   ctermbg=white
+hi Selected      cterm=bold ctermfg=01   ctermbg=none
+
+hi Directory     cterm=none ctermfg=01   ctermbg=none
