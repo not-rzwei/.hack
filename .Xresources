@@ -1,7 +1,7 @@
 ! urxvt
 urxvt.font: -misc-termsyn-medium-r-normal--12-120-75-75-c-60-iso8859-1
 urxvt.boldFont: -misc-termsyn-bold-r-normal--12-120-75-75-c-60-iso8859-1
-urxvt.termName: xterm-16color
+urxvt.termName: xterm-256color
 urxvt.matcher.button: 1
 urxvt.depth: 32
 urxvt.internalBorder: 20
