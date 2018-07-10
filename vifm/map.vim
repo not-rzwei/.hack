@@ -1,6 +1,6 @@
 " VIFM Mappings
 
-nnoremap ; :
+noremap ; :
 nnoremap q :quit<cr>
 nnoremap s :shell<cr>
 nnoremap S :sort<cr>
@@ -21,7 +21,7 @@ nnoremap cc cw<c-u>
 nnoremap A cw
 
 " Util
-nnoremap ,r :reload<cr>
+vnoremap ,r :rename<cr>
 nnoremap ,t :!urxvt &<cr>
 nnoremap ,c :write | edit ~/.config/vifm/vifmrc | restart<cr>
 

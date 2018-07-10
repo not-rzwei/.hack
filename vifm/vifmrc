@@ -9,6 +9,7 @@ set undolevels=10
 set novimhelp
 set norunexec
 set slowfs=curlftpfs
+set vifminfo=savedirs
 
 
 " Interface
