@@ -10,52 +10,49 @@ urxvt.cursorBlink: true
 urxvt.fading: 0
 urxvt.urgentOnBell: true
 urxvt.visualBell:   false
+urxvt.background:   [93]#3D4142
 
 ! xft font
 xft*dpi: 96
 xft*antialias: true
 xft*hinting: true
 xft*hintstyle: hintfull
-!xft*rgba: rgb
 
-! Springfield x16
-#define base00 #383644
-#define base01 #292832
-#define base02 #3D3B50
-#define base03 #52597F
-#define base04 #CBC8BF
-#define base05 #E2DED4
-#define base06 #F8F4E9
-#define base07 #FAF8F1
-#define base08 #E95C83
-#define base09 #CC7833
-#define base0A #FFD77C
-#define base0B #9CBE71
-#define base0C #6AC653
-#define base0D #7299AF
-#define base0E #AFB1D6
-#define base0F #C49080
-#define opacity 97
+! special
+*.foreground:   #f7f1ff
+*.background:   #3D4142
+*.cursorColor:  #f7f1ff
 
-urxvt.background: [opacity]base00
-*foreground:   base05
-*background:   base00
-*cursorColor:  base05
+! black
+*.color0:       #363537
+*.color8:       #69676c
 
-*color0:       base00
-*color1:       base08
-*color2:       base0B
-*color3:       base0A
-*color4:       base0D
-*color5:       base0E
-*color6:       base0C
-*color7:       base05
+! red
+*.color1:       #fc618d
+*.color9:       #fc618d
 
-*color8:       base03
-*color9:       base09
-*color10:      base01
-*color11:      base02
-*color12:      base04
-*color13:      base06
-*color14:      base0F
-*color15:      base07
+! green
+*.color2:       #7bd88f
+*.color10:      #7bd88f
+
+! yellow
+*.color3:       #fce566
+*.color11:      #fce566
+
+! blue
+*.color4:       #fd9353
+*.color12:      #fd9353
+
+! magenta
+*.color5:       #948ae3
+*.color13:      #948ae3
+
+! cyan
+*.color6:       #5ad4e6
+*.color14:      #14ffff
+
+! white
+*.color7:       #f7f1ff
+*.color15:      #f7f1ff
+
+
