@@ -1,0 +1,42 @@
+## ZIM
+zmodules=(directory environment git git-info history input utility custom \
+          prompt completion syntax-highlighting history-substring-search )
+
+setopt CORRECT
+SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '
+
+zprompt_theme='gitster'
+ztermtitle='%n@%m:%~'
+zinput_mode='vi'
+zdouble_dot_expand='true'
+zhighlighters=(main brackets)
+#zssh_ids=(id_rsa)
+
+## VI INDICATOR
+export KEYTIMEOUT=10
+
+function zle-keymap-select {
+   RPS1="${${KEYMAP/vicmd/"NORMAL"}/(main|viins)/"INSERT"} $EPS1"
+   zle reset-prompt
+}
+
+zle -N zle-keymap-select
+
+zle -A .backward-kill-word vi-backward-kill-word
+zle -A .backward-delete-char vi-backward-delete-char
+
+bindkey -M viins 'kj' vi-cmd-mode
+bindkey -M vicmd "^?" vi-backward-delete-char
+
+bindkey -M viins "^j" down-history
+bindkey -M viins "^k" up-history
+bindkey -M viins "^n" down-history
+bindkey -M viins "^p" up-history
+
+bindkey -M viins "^a" vi-beginning-of-line
+bindkey -M viins "^e" vi-end-of-line
+
+bindkey -M viins "^_" history-incremental-search-backward
+bindkey -M isearch '^k' history-incremental-search-backward
+bindkey -M isearch '^j' history-incremental-search-forward
+
