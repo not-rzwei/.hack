@@ -13,12 +13,15 @@ zhighlighters=(main brackets)
 #zssh_ids=(id_rsa)
 
 ## ENV
-export FZF_DEFAULT_COMMAND="fd --type f --hidden --follow --exclude .git"
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_DEFAULT_COMMAND="fd --type f --hidden --exclude .git"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND --type d"
 
 # #ALIAS
+alias hh="cd ~"
 alias v=nvim
 alias f=vifm
+alias t=tmux
+alias hc="rm $HISTFILE"
 alias pac="sudo pacman -S"
 alias par="sudo pacman -R"
 alias paq="sudo pacman -Q"
