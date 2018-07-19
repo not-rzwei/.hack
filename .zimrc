@@ -12,6 +12,16 @@ zdouble_dot_expand='true'
 zhighlighters=(main brackets)
 #zssh_ids=(id_rsa)
 
+## ALIAS
+alias v=nvim
+alias f=vifm
+alias pac="sudo pacman -S"
+alias par="sudo pacman -R"
+alias paq="sudo pacman -Q"
+alias wm="sudo wifi-menu"
+alias sw="sudo netctl stop-all"
+alias sctl="sudo systemctl"
+
 ## VI INDICATOR
 export KEYTIMEOUT=10
 
