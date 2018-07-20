@@ -1,6 +1,7 @@
 ## ZIM
 zmodules=(directory environment git git-info history input utility custom \
-          prompt completion syntax-highlighting history-substring-search )
+          prompt completion syntax-highlighting history-substring-search \
+          directory-hist)
 
 setopt CORRECT
 SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '
@@ -15,6 +16,7 @@ zhighlighters=(main brackets)
 ## ENV
 export FZF_DEFAULT_COMMAND="fd --type f --hidden --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND --type d"
+export PATH=$PATH:$HOME/.npm-packages/bin
 
 # #ALIAS
 alias hh="cd ~"
@@ -45,9 +47,9 @@ zle -A .backward-delete-char vi-backward-delete-char
 bindkey -M viins 'kj' vi-cmd-mode
 bindkey -M vicmd "^?" vi-backward-delete-char
 
-bindkey -M viins "^k" history-beginning-search-backward 
+bindkey -M viins "^k" history-beginning-search-backward
 bindkey -M viins "^j" history-beginning-search-forward
-bindkey -M viins "^p" history-beginning-search-backward 
+bindkey -M viins "^p" history-beginning-search-backward
 bindkey -M viins "^n" history-beginning-search-forward
 
 bindkey -M viins "^a" vi-beginning-of-line
@@ -56,4 +58,3 @@ bindkey -M viins "^e" vi-end-of-line
 bindkey -M viins "^_" history-incremental-search-backward
 bindkey -M isearch '^k' history-incremental-search-backward
 bindkey -M isearch '^j' history-incremental-search-forward
-
