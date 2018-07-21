@@ -13,6 +13,21 @@ urxvt.urgentOnBell: true
 urxvt.visualBell:   false
 urxvt.background:   [93]#3D4142
 
+! urxvt plugins
+urxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+urxvt.url-select.launcher: chromium
+urxvt.url-select.underline: true
+urxvt.keysym.M-u: perl:url-select:select_next
+
+urxvt.keysym.M-Escape: perl:keyboard-select:activate
+urxvt.keysym.M-s: perl:keyboard-select:search
+urxvt.keyboard-select.clipboard: true
+
+urxvt.clipboard.autocopy: true
+urxvt.keysym.M-c: perl:clipboard:copy
+urxvt.keysym.M-v: perl:clipboard:paste
+urxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+
 ! xft font
 xft*dpi: 96
 xft*antialias: true
@@ -55,5 +70,3 @@ xft*hintstyle: hintfull
 ! white
 *.color7:       #f7f1ff
 *.color15:      #f7f1ff
-
-
