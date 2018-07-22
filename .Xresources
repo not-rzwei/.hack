@@ -1,32 +1,32 @@
 ! urxvt
-urxvt.font: -misc-termsyn-medium-r-normal--12-120-75-75-c-60-iso8859-1
-urxvt.boldFont: -misc-termsyn-bold-r-normal--12-120-75-75-c-60-iso8859-1
-urxvt.italicFont:
-urxvt.termName: screen-256color
-urxvt.matcher.button: 1
-urxvt.depth: 32
-urxvt.internalBorder: 20
-urxvt.scrollBar: false
-urxvt.cursorBlink: true
-urxvt.fading: 0
-urxvt.urgentOnBell: true
-urxvt.visualBell:   false
-urxvt.background:   [93]#3D4142
+URxvt.font: -misc-termsyn-medium-r-normal--12-120-75-75-c-60-iso8859-1
+URxvt.boldFont: -misc-termsyn-bold-r-normal--12-120-75-75-c-60-iso8859-1
+URxvt.italicFont:
+URxvt.termName: screen-256color
+URxvt.matcher.button: 1
+URxvt.depth: 32
+URxvt.internalBorder: 20
+URxvt.scrollBar: false
+URxvt.cursorBlink: true
+URxvt.fading: 0
+URxvt.urgentOnBell: true
+URxvt.visualBell:   false
+URxvt.background:   [93]#3D4142
 
 ! urxvt plugins
-urxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
-urxvt.url-select.launcher: chromium
-urxvt.url-select.underline: true
-urxvt.keysym.M-u: perl:url-select:select_next
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+URxvt.url-select.launcher: chromium
+URxvt.url-select.underline: true
+URxvt.keysym.M-u: perl:url-select:select_next
 
-urxvt.keysym.M-Escape: perl:keyboard-select:activate
-urxvt.keysym.M-s: perl:keyboard-select:search
-urxvt.keyboard-select.clipboard: true
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keyboard-select.clipboard: true
 
-urxvt.clipboard.autocopy: true
-urxvt.keysym.M-c: perl:clipboard:copy
-urxvt.keysym.M-v: perl:clipboard:paste
-urxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.clipboard.autocopy: true
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 
 ! xft font
 xft*dpi: 96
