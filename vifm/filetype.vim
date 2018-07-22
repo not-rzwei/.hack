@@ -1,5 +1,5 @@
 " Pdf
-filextype *.pdf zathura %c %i &, apvlv %c, xpdf %c
+filextype *.pdf mupdf %c &
 fileviewer *.pdf pdftotext -nopgbrk %c -
 
 " Audio
